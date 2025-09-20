@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#search {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#pokemonList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 80%;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
