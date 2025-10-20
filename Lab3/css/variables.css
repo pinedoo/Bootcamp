@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "VR_Standard";
+  src: url(../fonts/estandar.woff2) format("woff2");
+}
+@font-face {
+  font-family: "VR_Standard_Italic";
+  src: url(../fonts/estandar_italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "VR_Handmade";
+  src: url(../fonts/handmade.woff2);
+}
+html {
+  --min-width: 320px;
+  /* COLORS */
+  --primary-color: #c9ab81;
+  --primary-complement-color: #819fc9;
+  --primary-dark-color: rgb(123.9, 94.4, 53.1);
+  --primary-darkest-color: rgb(52.5, 40, 22.5);
+  --primary-light-color: rgb(246.9, 242.4, 236.1);
+  --primary-lightest-color: white;
+  --secondary-color: #59335c;
+  --secondary-complement-color: #365c33;
+  --secondary-dark-color: black;
+  --secondary-darkest-color: black;
+  --secondary-light-color: rgb(174.1888111888, 117.3216783217, 178.6783216783);
+  --secondary-lightest-color: rgb(212.7062937063, 182.9440559441, 215.0559440559);
+  --neutral-color: #333333;
+  --neutral-complement-color: #333333;
+  --neutral-dark-color: black;
+  --neutral-darkest-color: black;
+  --neutral-light-color: rgb(127.5, 127.5, 127.5);
+  --neutral-lightest-color: rgb(178.5, 178.5, 178.5);
+  --warning-color: #cd0707;
+  --warning-complement-color: #07cdcd;
+  --warning-dark-color: rgb(57.0518867925, 1.9481132075, 1.9481132075);
+  --warning-darkest-color: black;
+  --warning-light-color: rgb(250.2122641509, 114.7877358491, 114.7877358491);
+  --warning-lightest-color: rgb(253.5801886792, 213.4198113208, 213.4198113208);
+  --info-color: #f0ad4e;
+  --info-complement-color: #4e91f0;
+  --info-dark-color: rgb(152.109375, 94.53125, 12.890625);
+  --info-darkest-color: rgb(58.078125, 36.09375, 4.921875);
+  --info-light-color: rgb(251.953125, 238.34375, 219.046875);
+  --info-lightest-color: white;
+  --text-color: #ffffff;
+  --text-complement-color: white;
+  --text-dark-color: rgb(178.5, 178.5, 178.5);
+  --text-darkest-color: rgb(127.5, 127.5, 127.5);
+  --text-light-color: white;
+  --text-lightest-color: white;
+  /* BREAKPOINTS */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+
+/*# sourceMappingURL=variables.css.map */
