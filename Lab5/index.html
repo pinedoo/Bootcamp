@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Timer Lit</title>
+  <script type="module" src="./index.js"></script>
+</head>
+<body>
+
+  <countdown-timer minutes="1" seconds="10" pad="1" show-minutes show-seconds controls="play,pause,reset"></countdown-timer>
+
+  <br>
+
+  <countdown-timer days="10" hours="0" minutes="0" seconds="5" pad="2" show-days show-hours show-minutes show-seconds controls="play,reset"></countdown-timer>
+
+  <script>
+    window.addEventListener("timer-finish", () => {
+      console.log("Timer finalizado");
+      alert("Tiempo terminado");
+    });
+  </script>
+
+</body>
+</html>
