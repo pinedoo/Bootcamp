@@ -1,0 +1,21 @@
+{
+    "name": "PWA Pomodoro Timer App",
+    "short_name": "Pomodoro PWA",
+    "description": "Una PWA con timer estilo Pomodoro instalable.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "src/assets/logos/TimerPWA-logos_transparent.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "src/assets/logos/TimerPWA-logos_white.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

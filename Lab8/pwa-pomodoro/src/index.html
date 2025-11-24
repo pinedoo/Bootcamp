@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Pomodoro Timer</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/src/assets/logos/TimerPWA-logos_transparent.png">
+    <!-- Webpack inyectará el CSS aquí o estará enlazado via JS -->
+</head>
+<body>
+    <!-- El web component principal -->
+    <app-wrapper></app-wrapper>
+
+    <!-- Registro del Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // Asegúrate de que el SW esté en la raíz para controlar todo el scope
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => console.log('SW registrado correctamente: ', registration.scope))
+                    .catch(err => console.log('Fallo en el registro del SW: ', err));
+            });
+        }
+    </script>
+    <!-- Webpack bundle -->
+    <script src="/dist/bundle.js"></script>
+</body>
+</html>
